@@ -18,6 +18,11 @@ const Hero = () => {
           containerStyles="md:w-1/3 mt-10"
           icon={magnifyingGlass}
         />
+        <p>Welcome to our theme collection! Explore 20 beautifully designed color themes, 
+          with 10 light and 10 dark modes, to enhance your web projects. Each theme offers a 
+          unique visual experience, ensuring both aesthetics and usability. Transform your website 
+          with our curated selection of vibrant and versatile themes.
+        </p>
       </div>
       <Image
         src={HeroBG}
