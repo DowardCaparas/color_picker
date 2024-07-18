@@ -3,31 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  color-scheme: dark;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.container_padding {
+  @apply px-4 sm:px-8 md:px-16 lg:px-20 xl:px-24 2xl:px-28 
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.copyHex_icon {
+  @apply object-contain  cursor-pointer absolute hidden group-hover:block
+  inset-0 bg-gray-700 rounded-full p-1
+}
+
+.hex_theme_container {
+  @apply flex justify-center items-center w-full h-10 p-2 
+}
+
+section {
+  @apply my-12
 }
