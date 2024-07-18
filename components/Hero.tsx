@@ -5,24 +5,28 @@ import { magnifyingGlass } from "@/public";
 
 const Hero = () => {
   return (
-    <div className="flex max-md:flex-wrap justify-between h-[600px] items-end gap-6 bg-zinc-950 overflow-hidden">
-      <div className="flex flex-col max-md:mx-auto max-md:text-center max-md:mt-28 xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl text-5xl font-bold container_padding my-auto">
+    <div className="flex max-md:flex-wrap justify-between h-[600px] items-end gap-6 
+    bg-zinc-950 overflow-hidden">
+      <div className="flex flex-col max-md:mx-auto max-md:text-center max-md:mt-28 
+      xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl text-4xl font-bold container_padding my-auto">
         <p className="uppercase text-[12px] font-medium text-green-500">
-          Discover your <br /> perfect pallete
+          Discover your perfect pallete
         </p>
         <span>
           Color <br /> Center
         </span>
+        
+        <p className="text-sm font-normal md:w-3/4 text-gray-300">
+          Welcome to our theme collection! Explore 20 color themes, 10 light and
+          10 dark, to enhance your web projects. Each theme offers unique
+          visuals and usability, ensuring a vibrant and versatile transformation
+          for your website.
+        </p>
         <CustomButton
           label="Explore Now"
           containerStyles="md:w-1/3 mt-10"
           icon={magnifyingGlass}
         />
-        <p>Welcome to our theme collection! Explore 20 beautifully designed color themes, 
-          with 10 light and 10 dark modes, to enhance your web projects. Each theme offers a 
-          unique visual experience, ensuring both aesthetics and usability. Transform your website 
-          with our curated selection of vibrant and versatile themes.
-        </p>
       </div>
       <Image
         src={HeroBG}
