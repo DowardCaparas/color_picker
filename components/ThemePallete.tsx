@@ -6,11 +6,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const ThemePallete = () => {
-  const handleClick = () => {};
   const pathname = usePathname();
 
   return (
-    <div className="w-full container_padding">
+    <div className={`w-full container_padding ${pathname === '/' ? '-mt-10' : 'mt-14'}`}>
       <h1 className="font-bold text-3xl">Different type of Themes</h1>
       <>
 

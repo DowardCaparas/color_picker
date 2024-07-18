@@ -2,6 +2,7 @@ import Image from "next/image";
 import { HeroBG } from "@/public/images";
 import CustomButton from "./CustomButton";
 import { magnifyingGlass } from "@/public";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -22,11 +23,15 @@ const Hero = () => {
           visuals and usability, ensuring a vibrant and versatile transformation
           for your website.
         </p>
+        <Link href='#explore'>
         <CustomButton
           label="Explore Now"
-          containerStyles="md:w-1/3 mt-10"
+          containerStyles="md:w-1/3 max-md:mx-auto mt-10 gap-2"
           icon={magnifyingGlass}
+          
         />
+        </Link>
+       
       </div>
       <Image
         src={HeroBG}
